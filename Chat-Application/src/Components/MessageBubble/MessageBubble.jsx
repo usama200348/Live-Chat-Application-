@@ -1,8 +1,28 @@
+function MessageBubble({
+  message,
+  ownMessage,
+}) {
+  return (
+    <div
+      className={`chat ${
+        ownMessage
+          ? "chat-end"
+          : "chat-start"
+      }`}
+    >
 
-function MessageBubble() {
-    return (
-        <div>MessageBubble</div>
-    )
+      <div
+        className={`chat-bubble ${
+          ownMessage
+            ? "chat-bubble-primary"
+            : ""
+        }`}
+      >
+        {message}
+      </div>
+
+    </div>
+  );
 }
 
-export default MessageBubble
+export default MessageBubble;

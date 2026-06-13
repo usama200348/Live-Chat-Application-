@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Register() {
   return (
     <div className="hero min-h-screen bg-base-200">
@@ -31,7 +33,12 @@ function Register() {
           <button className="btn btn-primary">
             Register
           </button>
-
+<Link to="/login">
+  Already Have An Account{" "}
+  <span className="text-primary font-semibold">
+    Click Here
+  </span>
+</Link>
         </div>
 
       </div>
